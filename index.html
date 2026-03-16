@@ -3,32 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Water Drop Dodge</title>
+<title>Water Run</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="ui">
-  <div id="score">Score: 0</div>
-  <div id="lives">♦ ♦ ♦</div>
+
+<div class="phone">
+
+<div id="topbar">
+<div id="score">Score: <b>0</b></div>
+<div id="lives">Lives: <span id="lifeIcons">❤❤❤</span></div>
 </div>
-<div style="position: relative;">
-  <canvas id="gameCanvas" width="320" height="500"></canvas>
-  <div id="startOverlay" class="overlay">
-    <h1>Water Drop Dodge</h1>
-    <p>Dodge the colorful obstacles!</p>
-    <p>Use ← → keys or buttons below</p>
-    <button onclick="startGame()">Start Game</button>
-  </div>
-  <div id="gameOverOverlay" class="overlay" style="display:none;">
-    <h1 style="color:#ff4c4c;">Game Over 😢</h1>
-    <p id="finalScore">Score: 0</p>
-    <button onclick="startGame()">Play Again</button>
-  </div>
-</div>
+
+<canvas id="gameCanvas" width="320" height="420"></canvas>
+
 <div id="controls">
-  <div class="btn" onclick="moveLeft()">←</div>
-  <div class="btn" onclick="moveRight()">→</div>
+<button onclick="moveLeft()">◀</button>
+<button onclick="moveRight()">▶</button>
 </div>
+
+<div id="startOverlay" class="overlay">
+<h1>WATER<br>RUN</h1>
+<p class="subtitle">One drop. One life.</p>
+
+<button class="startBtn" onclick="startGame()">Start Game</button>
+
+<p class="note">
+Every 10 seconds someone<br>
+needs clean water.
+</p>
+</div>
+
+<div id="gameOverOverlay" class="overlay hidden">
+<h2>Game Over</h2>
+<p id="finalScore"></p>
+<button class="startBtn" onclick="startGame()">Play Again</button>
+</div>
+
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
