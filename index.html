@@ -28,10 +28,17 @@
 
 <button class="startBtn" onclick="startGame()">Start Game</button>
 
-<p class="note">
-Every 10 seconds someone<br>
-needs clean water.
-</p>
+<div class="note">
+  <p>
+    Every 10 seconds someone<br>
+    needs clean water
+  </p>
+
+  <a href="https://www.charitywater.org/" target="_blank">
+    Learn more →
+  </a>
+</div>
+
 </div>
 
 <div id="gameOverOverlay" class="overlay hidden">
@@ -39,8 +46,6 @@ needs clean water.
   <p id="finalScore"></p>
   <p id="encouragement"></p>
   <button class="startBtn" onclick="startGame()">Play Again</button>
-</div>
-
 </div>
 
 <script src="script.js"></script>

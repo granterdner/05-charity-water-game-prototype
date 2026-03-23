@@ -24,6 +24,11 @@ position:relative;
 padding:20px;
 }
 
+a {
+  text-decoration: none; /* Removes underline */
+  color: inherit;        /* Sets color to surrounding text, or use a specific color */
+}
+
 #topbar{
 width:320px;
 background:#efede8;
